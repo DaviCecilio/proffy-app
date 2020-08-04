@@ -1,17 +1,14 @@
-import React from "react"
-import GlobalStyle from "./assets/styles/globalStyle"
-
-import Landing from "./pages/Landing"
+import React from "react";
+import GlobalStyle from "./assets/styles/globalStyle";
+import Routes from "./routes";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <div className="App">
-        <Landing />
-      </div>
+      <Routes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
