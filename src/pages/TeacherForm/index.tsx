@@ -1,7 +1,8 @@
 import React from "react";
+import PageHeader from "../../components/PageHeader";
 
 function TeacherForm() {
-  return <h1>Teachers</h1>;
+  return <PageHeader title="Estes são os proffys disponíveis."></PageHeader>;
 }
 
 export default TeacherForm;

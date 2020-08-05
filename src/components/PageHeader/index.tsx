@@ -8,6 +8,7 @@ import HeaderContainer from "./styles";
 
 interface PageHeaderProps {
   title: string;
+  children?: React.ReactNode;
 }
 
 const PageHeader: React.FC<PageHeaderProps> = ({ title, children }) => {

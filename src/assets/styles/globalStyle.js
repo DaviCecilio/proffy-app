@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -49,6 +49,7 @@ input,
 button,
 textarea{
   font: 500 1.6rem 'Poppins';
+  color: var(--color-text-base);
 }
 
 .container {
@@ -61,6 +62,6 @@ textarea{
     font-size: 62.5%;
   }
 }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

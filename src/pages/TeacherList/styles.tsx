@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 const PageTeacherContainer = styled.section`
-  width: 100vw;
-  height: 100vh;
-
   #page-teacher-list {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 
   form#search-teachers {
@@ -18,6 +16,10 @@ const PageTeacherContainer = styled.section`
     .input-block {
       position: relative;
 
+      & + .input-block {
+        margin-top: 1.4rem;
+      }
+
       label {
         font-size: 1.4rem;
       }
@@ -25,7 +27,7 @@ const PageTeacherContainer = styled.section`
       input {
         width: 100%;
         height: 5.6rem;
-        margin-top: 0.8;
+        margin-top: 0.8rem;
         border-radius: 0.8rem;
         background: var(--color-input-background);
         border: 1px solid var(--color-line-in-white);
@@ -43,6 +45,24 @@ const PageTeacherContainer = styled.section`
         left: 1.6rem;
         right: 1.6rem;
         bottom: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 700px) {
+    #page-teacher-list {
+      max-width: 100%;
+    }
+
+    form#search-teachers {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+      position: absolute;
+      bottom: -28px;
+
+      .input-block + .input-block {
+        margin-top: 0;
       }
     }
   }

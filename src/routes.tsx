@@ -3,7 +3,7 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 
 import Landing from "./pages/Landing";
 import TeacherList from "./pages/TeacherList";
-import TeachForm from "./pages/TeacherList";
+import TeachForm from "./pages/TeacherForm";
 
 function Routes() {
   return (
